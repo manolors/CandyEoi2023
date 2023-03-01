@@ -19,160 +19,196 @@
             <li>
               <div class="flex flex-col items-center m-6">
                 <img class="w-9" src="assets/webp/icons/japanflag.webp">
-                <a class="hover:text-blue-200" href="#">Dulces de Japón</a>
+                <a class="md:hover:text-blue-200" href="#">Dulces de Japón</a>
               </div>
               </li>
             <li>
               <div class="flex flex-col items-center">
               <img class="w-9" src="assets/webp/icons/eeuu.webp">
-              <a class="hover:text-blue-200" href="#">Dulces de EEUU</a>
+              <a class="md:hover:text-blue-200" href="#">Dulces de EEUU</a>
               </div>
             </li>
             <li>
               <div class="flex flex-col items-center">
                 <img class="w-9" src="assets/webp/icons/mexico.webp">
-                <a class="hover:text-blue-200" href="#">Dulce de México</a>
+                <a class="md:hover:text-blue-200" href="#">Dulce de México</a>
               </div>
             </li>
             <li>
               <div class="flex flex-col items-center">
                 <img class="w-9" src="assets/webp/icons/europe.webp">
-                <a class="hover:text-blue-200" href="#">Dulces de Europa</a>
+                <a class="md:hover:text-blue-200" href="#">Dulces de Europa</a>
               </div>
             </li>
             <li>
               <div class="flex flex-col items-center">
                 <img class="w-9" src="assets/sweets.png">
-                <a class="hover:text-blue-200" href="#">Golosinas</a>
+                <a class="md:hover:text-blue-200" href="#">Golosinas</a>
               </div>
             </li>
             <li>
               <div class="flex flex-col items-center">
                 <img class="w-9" src="assets/chocolate.png">
-                <a class="hover:text-blue-200" href="#">Chocolate</a>
+                <a class="md:hover:text-blue-200" href="#">Chocolate</a>
               </div>
             </li>
           </ul>
           </div>
-          <div class="md:flex md:gap-6 text-purple-800 md:translate-x-96">
+          <!--<div class="md:flex md:gap-6 text-purple-800 md:translate-x-96">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
             </svg>
-          </div>
+          </div>-->
         </nav>
         </div>
-        <div class="flex flex-col items-center relative top-4">
+        <div class="flex flex-col items-center md:relative md:top-4">
           <img class="w-56" src="assets/logo-letras.png" alt="Logo">
         </div>
       </div>
   </header>
   <form class="flex flex-row justify-center p-3">
-    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
         <input type="search" id="default-search" class="block items-center w-80 p-3 pl-10 text-sm text-gray-900 border border-b-pink-700 border-t-transparent border-l-transparent border-r-transparent" placeholder="¡Encuentra tus dulces favoritos!" required>
     </div>
 </form>
-<div class="bg-[url('/assets/webp/chuches(8).webp')] bg-center md:w-auto w-full h-72 bg-cover
-bg-no-repeat object-top">
-<p>
+<div class="bg-[url('/assets/webp/chuches(8).webp')] bg-center md:w-auto w-full md:h-72 h-48 bg-cover
+bg-no-repeat object-top flex flex-col items-center justify-center">
+  <div class="flex flex-col gap-5">
+  <p class="text-center font-bold text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
   ¡La desconexión que necesitas a sólo un click!
-</p>
-<div class="flex md:flex-row md:justify-center md:items-center">
-<a href="" class="md:bg-pink-300 md:h-7 md:p-1">Quiero verlo!</a>
-<img src="assets/prueba.png" class="w-6" alt="">
+  </p>
+  <div class="flex flex-row justify-center items-center gap-2 md:justify-center md:items-center">
+    <a href="" class="bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-1">¡Quiero verlo!</a>
+    <img src="assets/webp/icons/mouse-click-icon.svg" class="w-6 md:hover:animate-ping" alt="">
+  </div>
+  </div>
 </div>
-</div>
-  <div class="flex md:flex-row md:m-24 md:gap-28">
-      <div class="grid grid-cols-2 gap-12 w-1/2">
-        <img class="col-span-2  object-cover h-80 w-full hover:scale-110 hover:ease-linear duration-100 hover:contrast-125" src="assets/webp/chewchew.webp" alt="">
-        <img class="md:h-96  hover:scale-110 hover:ease-linear duration-100 hover:contrast-125" src="assets/webp/halloween.webp" alt="">
-        <img class="md:h-96 hover:scale-110 hover:ease-linear duration-100 hover:contrast-125" src="assets/webp/chuches(5).webp" alt="">
+  <div class="flex md:flex-row md:m-24 m-6 md:gap-28 gap-5 md:mx-40 mx-12">
+      <div class="grid grid-cols-2 md:gap-12 gap-3 w-1/2">
+        <img class="col-span-2 object-cover h-16 md:h-80 w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/chewchew.webp" alt="">
+        <img class="md:h-80 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/halloween.webp" alt="">
+        <img class="md:h-80 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/chuches(5).webp" alt="">
       </div>
-      <div class="flex items-center content-baseline w-1/2">
-        <ul class="flex flex-col gap-28 w-full">
-          <li class="flex items-center gap-10">
-            <img src="assets/webp/icons/world.webp" alt="" class="w-16">
-            <p class="text-4xl font-bold text-right">Dulces de distintas partes del mundo</p>
+      <div class="flex items-center w-1/2">
+        <ul class="flex flex-col md:gap-28 gap-4 w-full">
+          <li class="flex items-center md:gap-10 gap-3">
+            <img src="assets/webp/icons/world.webp" alt="" class="md:w-16 w-6">
+            <p class="md:text-4xl text-xs font-bold">Dulces de distintas partes del mundo</p>
             <!--bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500-->
           </li>
-          <li class="flex items-cente gap-10">
-            <img src="assets/webp/icons/delivery-4.webp" alt="" class="w-16">
-            <p class="text-4xl font-bold text-right">Envíos a toda España (Canarias incluidas)</p>
+          <li class="flex items-center md:gap-10 gap-3">
+            <img src="assets/webp/icons/delivery-4.webp" alt="" class="md:w-16 w-6">
+            <p class="md:text-4xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
           </li>
-          <li class="flex items-center gap-10">
-            
-            <img src="assets/webp/icons/oferta2.webp" alt="" class="w-16">
-            <p class="text-4xl font-bold text-right">¡Regístrate y recibe ofertas y descuentos especiales!</p>
-            
+          <li class="flex items-center md:gap-10 gap-3">
+            <img src="assets/webp/icons/oferta2.webp" alt="" class="md:w-16 w-6">
+            <p class="md:text-4xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
           </li>
         </ul>
       </div>
     </div>
-    <div class="bg-red-100 bg-opacity-40 w-full md:h-72 flex md:flex-col md:justify-center md:items-center md:gap-9 py-52">
-      <h1 class="text-3xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
-      <h2 class="text-4xl font-bold text-rose-900">Lo primero, eres tú.</h2>
-      <div class="flex flex-row w-16 items-center justify-center gap-9 mt-9">
-        <img class="hover:scale-125" src="assets/webp/icons/avellana.webp" alt="">
-        <img class="hover:scale-125" src="assets/webp/icons/azucar.webp" alt="">
-        <img class="hover:scale-125" src="assets/webp/icons/cacahuete.webp" alt="">
-        <img class="hover:scale-125" src="assets/webp/icons/huevos.webp" alt="">
-        <img class="hover:scale-125" src="assets/webp/icons/leche.webp" alt="">
+    <div class="bg-red-100 bg-opacity-40 w-full md:h-72 h-20 flex flex-col justify-center items-center gap-3 md:gap-9 py-32 md:py-52">
+      <h1 class="text-sm text-center m-5 md:text-3xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
+      <h2 class="text-sm text center md:text-4xl font-bold text-rose-900">Lo primero eres tú.</h2>
+      <div class="flex flex-row md:w-16 w-7 items-center justify-center gap-10 md:gap-9 mt-4 md:mt-9">
+        <img class="md:hover:scale-125" src="assets/webp/icons/avellana.webp" alt="">
+        <img class="md:hover:scale-125" src="assets/webp/icons/azucar.webp" alt="">
+        <img class="md:hover:scale-125" src="assets/webp/icons/cacahuete.webp" alt="">
+        <img class="md:hover:scale-125" src="assets/webp/icons/huevos.webp" alt="">
+        <img class="md:hover:scale-125" src="assets/webp/icons/leche.webp" alt="">
       </div>
     </div>
-    <div>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <div class="flex flex-col justify-center items-center m-5 gap-4 md:m-10">
+      <h1 class="self-start text-sm font-bold">Productos recomendados</h1>
+      <div class="flex flex-row gap-7 md:gap-10">
+        <div class="flex flex-col">
+          <div class="bg-[url('/assets/webp/candy1.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
+          bg-no-repeat object-top"></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Fizz Bang</a></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="bg-[url('/assets/webp/candy2.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
+          bg-no-repeat object-top"></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Fizz Matcha</a></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="bg-[url('/assets/webp/candy4.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-right bg-cover
+          bg-no-repeat object-top"></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><h1><a href="#">Zenhou Colors</a></h1></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="bg-[url('/assets/pez.webp')] w-24 md:w-80 h-20 md:h-80 bg-cover
+          bg-no-repeat object-top"></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Blop Chocolate!</a></div>
+        </div>
     </div>
-    <div class="flex flex-row justify-center items-center m-10">
-      <h1>Productos recomendados</h1>
-      <div class="flex md:flex-row md:gap-10"> PADRE
-        <div class="bg-[url('/assets/webp/candy1.webp')] bg-center md:w-80 w-full md:h-80 bg-cover
-        bg-no-repeat object-top">
-          <h1>gruhgrua</h1>
-        </div>
-        <div class="bg-[url('/assets/webp/candy2.webp')] bg-center md:w-80 w-full md:h-80 bg-cover
-        bg-no-repeat object-top">
-          <h1>dgagsfg</h1>
-        </div>
-        <div class="bg-[url('/assets/webp/candy4.webp')] bg-right md:w-80 w-full md:h-80 bg-cover
-        bg-no-repeat object-top">
-          <h1>dfgsgs</h1>
-        </div>
-        <div class="bg-[url('/assets/pez.webp')] md:w-80 w-full md:h-80 bg-cover
-        bg-no-repeat object-top">
-          <h1>dsgfsgsgds</h1>
-        </div>
-    </div>
+  </div>
 </body>
-<footer>
-  <div class="flex flex-col">
-    <div>
-      <ul></ul>
-    </div>
-    <div class="flex flex-col">
-      <div>logo
-        <img src="" alt="">
+<footer class="p-4 bg-red-600 bg-opacity-40 sm:p-6">
+  <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="index.html" class="flex items-center">
+              <img src="assets/logo-letras.png" class="h-32 mr-3" alt="Logo CandyKoa"/>
+          </a>
       </div>
-      <div class="flex flex-row">redes
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Sobre nosotros</h2>
+              <ul class="text-white">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Quiénes somos</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Nuestros productos</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Síguenos</h2>
+              <ul class="text-white">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline ">Instagram</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Twitter</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Legal</h2>
+              <ul class="text-white">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Política de privacidad</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Términos y Condiciones</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-      <div class="flex flex-row">cards
-        <img src="" alt="">
-        <img src="" alt="">
+  </div>
+  <hr class="my-6 border-pink-700 sm:mx-auto lg:my-8" />
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-white sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a href="#" class="text-white hover:text-pink-900">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/gmail1.webp" alt="Instagram">
+          </a>
+          <a href="#" class="text-white hover:text-pink-900">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/instagram2.webp" alt="Instagram">
+          </a>
+          <a href="#" class="text-white hover:text-pink-900">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/twitter2.webp" alt="Instagram">
+          </a>
       </div>
-      <div>
-        <ul></ul>
-      </div>
-    </div>
   </div>
 </footer>
 </html>
