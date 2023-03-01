@@ -13,7 +13,10 @@
   <header class="bg-[url('/assets/webp/nubes.webp')] bg-center md:w-auto w-full h-96 bg-cover
   bg-no-repeat object-top">
       <div>
-      <nav class="flex justify-center flex-row items-center w-[100%] mx-auto">
+      <nav class="flex md:justify-center flex-col md:flex-row justify-between md:items-center w-[100%] mx-auto">
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <img class="w-6 mt-3" src="assets/icons/icons8-menú-redondeado-100.png" name="menu" onclick="Menu(this)" alt="Menú">
+        </span>
         <div class="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 font-bold text-stone-50">
           <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
             <li>
@@ -78,46 +81,46 @@
         <input type="search" id="default-search" class="block items-center w-80 p-3 pl-10 text-sm text-gray-900 border border-b-pink-700 border-t-transparent border-l-transparent border-r-transparent" placeholder="¡Encuentra tus dulces favoritos!" required>
     </div>
 </form>
-<div class="bg-[url('/assets/webp/chuches(8).webp')] bg-center md:w-auto w-full md:h-72 h-48 bg-cover
+<div class="bg-[url('/assets/comprimidas/fresa.jpeg')] bg-center md:w-auto w-full md:h-72 h-36 bg-cover
 bg-no-repeat object-top flex flex-col items-center justify-center">
-  <div class="flex flex-col gap-5">
-  <p class="text-center font-bold text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
+  <div class="flex flex-col gap-5 md:gap-20">
+  <p class="text-center font-bold md:text-4xl text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
   ¡La desconexión que necesitas a sólo un click!
   </p>
   <div class="flex flex-row justify-center items-center gap-2 md:justify-center md:items-center">
-    <a href="" class="bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-1">¡Quiero verlo!</a>
+    <a href="" class="flex md:items-center bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-5 md:text-2xl">¡Quiero verlo!</a>
     <img src="assets/webp/icons/mouse-click-icon.svg" class="w-6 md:hover:animate-ping" alt="">
   </div>
   </div>
 </div>
-  <div class="flex md:flex-row md:m-24 m-6 md:gap-28 gap-5 md:mx-40 mx-12">
-      <div class="grid grid-cols-2 md:gap-12 gap-3 w-1/2">
-        <img class="col-span-2 object-cover h-16 md:h-80 w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/chewchew.webp" alt="">
-        <img class="md:h-80 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/halloween.webp" alt="">
-        <img class="md:h-80 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/chuches(5).webp" alt="">
+  <div class="flex md:flex-row md:m-24 m-6 md:gap-28 gap-4 md:mx-60 mx-6">
+      <div class="grid grid-cols-2 md:gap-6 gap-2 w-1/2">
+        <img class="col-span-2 object-cover h-20 md:h-60 w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/chewchew.jpeg" alt="">
+        <img class="md:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/halloween.webp" alt="">
+        <img class="md:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/webp/chuches(5).webp" alt="">
       </div>
       <div class="flex items-center w-1/2">
-        <ul class="flex flex-col md:gap-28 gap-4 w-full">
+        <ul class="flex flex-col md:gap-28 gap-3 w-full">
           <li class="flex items-center md:gap-10 gap-3">
-            <img src="assets/webp/icons/world.webp" alt="" class="md:w-16 w-6">
-            <p class="md:text-4xl text-xs font-bold">Dulces de distintas partes del mundo</p>
+            <img src="assets/webp/icons/world.webp" alt="" class="md:w-12 w-6">
+            <p class="md:text-3xl text-xs font-bold">Dulces de distintas partes del mundo</p>
             <!--bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500-->
           </li>
           <li class="flex items-center md:gap-10 gap-3">
-            <img src="assets/webp/icons/delivery-4.webp" alt="" class="md:w-16 w-6">
-            <p class="md:text-4xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
+            <img src="assets/webp/icons/delivery-4.webp" alt="" class="md:w-12 w-6">
+            <p class="md:text-3xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
           </li>
           <li class="flex items-center md:gap-10 gap-3">
-            <img src="assets/webp/icons/oferta2.webp" alt="" class="md:w-16 w-6">
-            <p class="md:text-4xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
+            <img src="assets/webp/icons/oferta2.webp" alt="" class="md:w-12 w-6">
+            <p class="md:text-3xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
           </li>
         </ul>
       </div>
     </div>
-    <div class="bg-red-100 bg-opacity-40 w-full md:h-72 h-20 flex flex-col justify-center items-center gap-3 md:gap-9 py-32 md:py-52">
-      <h1 class="text-sm text-center m-5 md:text-3xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
-      <h2 class="text-sm text center md:text-4xl font-bold text-rose-900">Lo primero eres tú.</h2>
-      <div class="flex flex-row md:w-16 w-7 items-center justify-center gap-10 md:gap-9 mt-4 md:mt-9">
+    <div class="bg-red-100 bg-opacity-40 w-full md:h-60 h-12 flex flex-col justify-center items-center gap-3 md:gap-9 py-32 md:py-52">
+      <h1 class="text-sm text-center m-5 md:text-2xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
+      <h2 class="text-sm text center md:text-3xl font-bold text-rose-900">Lo primero eres tú.</h2>
+      <div class="flex flex-row md:w-12 w-6 items-center justify-center gap-10 md:gap-20 mt-4 md:mt-9">
         <img class="md:hover:scale-125" src="assets/webp/icons/avellana.webp" alt="">
         <img class="md:hover:scale-125" src="assets/webp/icons/azucar.webp" alt="">
         <img class="md:hover:scale-125" src="assets/webp/icons/cacahuete.webp" alt="">
@@ -125,33 +128,43 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
         <img class="md:hover:scale-125" src="assets/webp/icons/leche.webp" alt="">
       </div>
     </div>
-    <div class="flex flex-col justify-center items-center m-5 gap-4 md:m-10">
-      <h1 class="self-start text-sm font-bold">Productos recomendados</h1>
-      <div class="flex flex-row gap-7 md:gap-10">
-        <div class="flex flex-col">
-          <div class="bg-[url('/assets/webp/candy1.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
+    <div class="flex flex-col justify-center items-center m-5 gap-6 md:m-10">
+      <h1 class="self-start text-sm md:text-lg md:text-pink-800 font-bold">Productos recomendados</h1>
+      <div class="flex flex-row gap-7 md:gap-10 md:h-64 md:mt-5 mb-10">
+        <div class="flex flex-col md:flex-row md:gap-9 gap-3">
+        <div class="flex flex-col md:hover:scale-110">
+          <div class="bg-[url('assets/comprimidas/fizz.jpeg')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
           bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Fizz Bang</a></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><a href="#">Fizz Bang</a></div>
         </div>
-        <div class="flex flex-col">
-          <div class="bg-[url('/assets/webp/candy2.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
+        <div class="flex flex-col md:hover:scale-110">
+          <div class="bg-[url('/assets/comprimidas/fizzmatcha.jpeg')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
           bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Fizz Matcha</a></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><a href="#">Fizz Matcha</a></div>
         </div>
-        <div class="flex flex-col">
-          <div class="bg-[url('/assets/webp/candy4.webp')] w-24 md:w-80 h-20 md:h-80 md:bg-right bg-cover
-          bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><h1><a href="#">Zenhou Colors</a></h1></div>
         </div>
-        <div class="flex flex-col">
-          <div class="bg-[url('/assets/pez.webp')] w-24 md:w-80 h-20 md:h-80 bg-cover
+        <div class="flex flex-col md:flex-row md:gap-9 gap-3">
+        <div class="flex flex-col md:hover:scale-110">
+          <div class="bg-[url('/assets/comprimidas/zenhou.jpeg')] w-24 md:w-80 h-20 md:h-80 md:bg-right bg-cover
           bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center"><a href="#">Blop Chocolate!</a></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><h1><a href="#">Zenhou Colors</a></h1></div>
+        </div>
+        <div class="flex flex-col md:hover:scale-110">
+          <div class="bg-[url('/assets/comprimidas/pez.jpeg')] w-24 md:w-80 h-20 md:h-80 bg-cover
+          bg-no-repeat object-top"></div>
+          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><a href="#">Blop Chocolate!</a></div>
+        </div>
         </div>
     </div>
   </div>
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
 </body>
-<footer class="p-4 bg-red-600 bg-opacity-40 sm:p-6">
+<footer class="p-4 bg-blue-200 bg-opacity-40 sm:p-6">
   <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
           <a href="index.html" class="flex items-center">
@@ -160,8 +173,8 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Sobre nosotros</h2>
-              <ul class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
+              <ul class="">
                   <li class="mb-4">
                       <a href="#" class="hover:underline">Quiénes somos</a>
                   </li>
@@ -171,19 +184,19 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
               </ul>
           </div>
           <div>
-              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Síguenos</h2>
-              <ul class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
+              <ul class="">
                   <li class="mb-4">
-                      <a href="#" class="hover:underline ">Instagram</a>
+                      <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
                   </li>
                   <li>
-                      <a href="#" class="hover:underline">Twitter</a>
+                      <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
                   </li>
               </ul>
           </div>
           <div>
-              <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Legal</h2>
-              <ul class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
+              <ul class="">
                   <li class="mb-4">
                       <a href="#" class="hover:underline">Política de privacidad</a>
                   </li>
@@ -194,18 +207,18 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
           </div>
       </div>
   </div>
-  <hr class="my-6 border-pink-700 sm:mx-auto lg:my-8" />
+  <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
   <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-white sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights Reserved.
+      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights Reserved.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a href="#" class="text-white hover:text-pink-900">
-            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/gmail1.webp" alt="Instagram">
+          <a href="mailto:candykoaofficial@gmail.com" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/gmail1.webp" alt="Gmail">
           </a>
-          <a href="#" class="text-white hover:text-pink-900">
+          <a href="https://www.instagram.com/candykoaofficial/" class="text-white">
             <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/instagram2.webp" alt="Instagram">
           </a>
-          <a href="#" class="text-white hover:text-pink-900">
+          <a href="https://twitter.com/CandyKoa_" class="text-white">
             <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/twitter2.webp" alt="Instagram">
           </a>
       </div>
