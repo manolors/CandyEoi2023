@@ -11,97 +11,166 @@
 </head>
 
 <body>
-<header class="bg-[url('/assets/chuches/anotherone.png')] w-full h-72 bg-cover bg-center bg-no-repeat">
-    <p class="flex flex-col relative top-20 items-center text-xl md:text-5xl">¿Quiénes somos?</p>
-</header>
-    <div class=" flex flex-col text-center pt-20">
-    <p> CandyKoa es una web Española, creada para hacer felices a niños (y no tan niños), llevando a sus hogares
-        chucherías de diversas partes del mundo. <br>
-        Con nuestra web deseamos acercarles un poco más hacia la cultura de países como Japón, México o EEUU. <br>
-        El equipo encargado de hacer la web son alumnos de la Escuela de Organización Industrial (EOI), bootcamp de
-        Programación FrontEnd, dirigido por el Sr. Jose Román (Manz). <br>
-        El equipo corporativo de CandyKoa desea que disfruten de nuestras chucherías.
-    </p>
+    <header class="bg-[url('/assets/comprimidas/nubes.jpeg')] bg-center md:w-auto w-full h-96 bg-cover
+    bg-no-repeat object-top">
+        <div>
+        <nav class="flex md:justify-center flex-col md:flex-row justify-between md:items-center w-[100%] mx-auto">
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <img class="w-6 mt-3" src="assets/icons/icons8-menú-redondeado-100.png" name="menu" onclick="Menu(this)" alt="Menú">
+          </span>
+          <div class="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 font-bold text-stone-50">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
+              <li>
+                <div class="flex flex-col items-center m-6">
+                  <img class="w-9" src="assets/webp/icons/japanflag.webp">
+                  <a class="md:hover:text-blue-200" href="#">Dulces de Japón</a>
+                </div>
+                </li>
+              <li>
+                <div class="flex flex-col items-center">
+                <img class="w-9" src="assets/webp/icons/eeuu.webp">
+                <a class="md:hover:text-blue-200" href="#">Dulces de EEUU</a>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col items-center">
+                  <img class="w-9" src="assets/webp/icons/mexico.webp">
+                  <a class="md:hover:text-blue-200" href="#">Dulces de México</a>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col items-center">
+                  <img class="w-9" src="assets/webp/icons/europe.webp">
+                  <a class="md:hover:text-blue-200" href="#">Dulces de Europa</a>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col items-center">
+                  <img class="w-9" src="assets/sweets.png">
+                  <a class="md:hover:text-blue-200" href="#">Golosinas</a>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col items-center">
+                  <img class="w-9" src="assets/chocolate.png">
+                  <a class="md:hover:text-blue-200" href="#">Chocolate</a>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <!--<div class="md:flex md:gap-6 text-purple-800 md:translate-x-96">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+            </div>-->
+          </nav>
+          </div>
+          <div class="flex flex-col items-center md:relative md:top-4">
+            <img class="w-56" src="assets/logo-letras.png" alt="Logo">
+          </div>
+        </div>
+    </header>
+<body>
+        <div class=" flex flex-col text-center pt-20">
+            <p> CandyKoa es una web Española, creada para hacer felices a niños (y no tan niños), llevando a sus hogares
+                chucherías de diversas partes del mundo. <br>
+                Con nuestra web deseamos acercarles un poco más hacia la cultura de países como Japón, México o EEUU. <br>
+                El equipo encargado de hacer la web son alumnos de la Escuela de Organización Industrial (EOI), bootcamp de
+                Programación FrontEnd, dirigido por el Sr. Jose Román (Manz). <br>
+                El equipo corporativo de CandyKoa desea que disfruten de nuestras chucherías.
+            </p>
+        </div>
+        <div class="flex flex-row  p-10">
+            
+            <div class="w-30 hover:scale-125">
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-mira-alav%C3%A9s/" target="_blank"><img src="assets/compis/MaríaKoa.png" alt=""></a>
+            </div>
+            <div class="w-30 hover:scale-125">
+                <a href="https://www.linkedin.com/in/jorge-porta-blanco-399670199/" target="_blank"><img src="assets/compis/JorgeKoa.png" alt=""></a>
+            </div>
+            <div class="w-30 hover:scale-125">
+                <a href="https://www.linkedin.com/in/celia-taroncher/" target="_blank"><img src="assets/compis/CeliaKoa.png" alt=""></a>
+            </div>
+            <div class="w-30 hover:scale-125">
+                <a href="https://www.linkedin.com/in/miriam-alonso-hernandez-186299267/" target="_blank"><img src="assets/compis/MiriamKoa.png" alt=""></a>
+            </div>
+            <div class="esther hover:scale-125">
+                <a href="https://www.linkedin.com/in/estherdiazdelaguardia/" target="_blank"><img src="assets/compis/EstherKoa.png" alt=""></a>
+            </div>
     </div>
-    <div class="flex flex-row  p-10">
-    
-    <div class="w-30 hover:scale-125">
-        <a href="https://www.linkedin.com/in/mar%C3%ADa-mira-alav%C3%A9s/" target="_blank"><img src="assets/compis/MaríaKoa.png" alt=""></a>
-    </div>
-    <div class="w-30 hover:scale-125">
-        <a href="https://www.linkedin.com/in/jorge-porta-blanco-399670199/" target="_blank"><img src="assets/compis/JorgeKoa.png" alt=""></a>
-    </div>
-    <div class="w-30 hover:scale-125">
-        <a href="https://www.linkedin.com/in/celia-taroncher/" target="_blank"><img src="assets/compis/CeliaKoa.png" alt=""></a>
-    </div>
-    <div class="w-30 hover:scale-125">
-        <a href="https://www.linkedin.com/in/miriam-alonso-hernandez-186299267/" target="_blank"><img src="assets/compis/MiriamKoa.png" alt=""></a>
-    </div>
-    <div class="esther hover:scale-125">
-        <a href="https://www.linkedin.com/in/estherdiazdelaguardia/" target="_blank"><img src="assets/compis/EstherKoa.png" alt=""></a>
-    </div>
-    </div>
-</div>
-
+</body>
+<script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
 <footer class="p-4 bg-blue-200 bg-opacity-40 sm:p-6">
-    <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/logo-letras.png" class="h-32 mr-3" alt="Logo CandyKoa"/>
-            </a>
-        </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Sobre nosotros</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Quiénes somos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Nuestros productos</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Síguenos</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline ">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Twitter</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-pink-700 uppercase">Legal</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Política de privacidad</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Términos y Condiciones</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <hr class="my-6 border-pink-700 sm:mx-auto lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-white sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights Reserved.
-        </span>
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="#" class="text-white hover:text-pink-900">
-              <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/gmail1.webp" alt="Instagram">
-            </a>
-            <a href="#" class="text-white hover:text-pink-900">
-              <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/instagram2.webp" alt="Instagram">
-            </a>
-            <a href="#" class="text-white hover:text-pink-900">
-              <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/twitter2.webp" alt="Instagram">
-            </a>
-        </div>
-    </div>
+  <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="index.html" class="flex items-center">
+              <img src="assets/logo-letras.png" class="h-32 mr-3" alt="Logo CandyKoa"/>
+          </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
+              <ul class="">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Quiénes somos</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Nuestros productos</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
+              <ul class="">
+                  <li class="mb-4">
+                      <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
+              <ul class="">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Política de privacidad</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Términos y Condiciones</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a href="mailto:candykoaofficial@gmail.com" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/gmail1.webp" alt="Gmail">
+          </a>
+          <a href="https://www.instagram.com/candykoaofficial/" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/instagram2.webp" alt="Instagram">
+          </a>
+          <a href="https://twitter.com/CandyKoa_" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/webp/icons/twitter2.webp" alt="Instagram">
+          </a>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
+
 </footer>
 </body>
 
