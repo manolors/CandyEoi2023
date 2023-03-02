@@ -9,16 +9,19 @@
   <link rel="stylesheet" href="./index.css">
   <script type="module" src="./index.js"></script>
 </head>
-<body class="bg-white w-full">
-  <header class="bg-[url('/assets/comprimidas/nubes.jpeg')] bg-center md:w-auto w-full h-96 bg-cover
+<body class="bg-white w-full md:w-full lg:w-full">
+  <!--Imagen de header-->
+  <header class="bg-[url('/assets/comprimidas/nubes.jpeg')] bg-center md:w-auto lg:w-auto w-full h-96 bg-cover
   bg-no-repeat object-top">
+<!--Menú-->
       <div>
       <nav class="flex md:justify-center flex-col md:flex-row justify-between md:items-center w-[100%] mx-auto">
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
           <img class="w-6 mt-3" src="assets/icons/icons8-menú-redondeado-100.png" name="menu" onclick="Menu(this)" alt="Menú">
         </span>
         <div class="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 font-bold text-stone-50">
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
+          <!--Categorías menú-->
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-2 gap-8">
             <li>
               <div class="flex flex-col items-center m-6">
                 <img class="w-9" src="assets/webp/icons/japanflag.webp">
@@ -57,6 +60,7 @@
             </li>
           </ul>
           </div>
+          <!--Iconos Login y Carrito-->
           <!--<div class="md:flex md:gap-6 text-purple-800 md:translate-x-96">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -67,11 +71,13 @@
           </div>-->
         </nav>
         </div>
+        <!--Logo CandyKoa del header-->
         <div class="flex flex-col items-center md:relative md:top-4">
           <img class="w-56" src="assets/logo-letras.png" alt="Logo">
         </div>
       </div>
   </header>
+  <!--Barra de búsqueda-->
   <form class="flex flex-row justify-center p-3">
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">
@@ -81,47 +87,50 @@
         <input type="search" id="default-search" class="block items-center w-80 p-3 pl-10 text-sm text-gray-900 border border-b-pink-700 border-t-transparent border-l-transparent border-r-transparent" placeholder="¡Encuentra tus dulces favoritos!" required>
     </div>
 </form>
-<div class="bg-[url('/assets/comprimidas/fresa.jpeg')] bg-center md:w-auto w-full md:h-72 h-36 bg-cover
+<!--Fondo fresas-->
+<div class="bg-[url('/assets/comprimidas/fresa.jpeg')] bg-center md:w-auto sm:w-full md:h-72 h-36 bg-cover
 bg-no-repeat object-top flex flex-col items-center justify-center">
   <div class="flex flex-col gap-5 md:gap-20">
-  <p class="text-center font-bold md:text-4xl text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
+  <p class="text-center font-bold lg:text-4xl md:text-2xl text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
   ¡La desconexión que necesitas a sólo un click!
   </p>
   <div class="flex flex-row justify-center items-center gap-2 md:justify-center md:items-center">
-    <a href="" class="flex md:items-center bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-5 md:text-2xl">¡Quiero verlo!</a>
+    <a href="listaproductos.html" class="flex md:items-center bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-5 text-sm md:text-2xl">¡Quiero verlo!</a>
     <img src="assets/webp/icons/mouse-click-icon.svg" class="w-6 md:hover:animate-ping" alt="">
   </div>
   </div>
 </div>
-  <div class="flex md:flex-row md:m-24 m-6 md:gap-28 gap-4 md:mx-60 mx-6">
-      <div class="grid grid-cols-2 md:gap-6 gap-2 w-1/2">
-        <img class="col-span-2 object-cover h-20 md:h-60 w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/chewchew.jpeg" alt="">
-        <img class="md:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/halloween.jpeg" alt="">
-        <img class="md:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/moras.jpeg" alt="">
+<!--Entrada 1 con fotos e iconos-->
+  <div class="flex md:flex-row lg:flex-row md:mt-10 md:mb-10 md:p-10 lg:m-24 m-4 md:gap-5 lg:gap-28 gap-2 lg:mx-60 mx-2 w-auto md:w-auto">
+      <!--Imágenes-->
+      <div class="grid grid-cols-2 lg:gap-6 gap-2 md:gap-2 w-44 md:w-72 lg:w-1/2">
+        <img class="col-span-2 object-cover h-20 md:h-48 lg:h-60 w-full lg:w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/chewchew.jpeg" alt="">
+        <img class="md:h-32 lg:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/halloween.jpeg" alt="">
+        <img class="md:h-32 lg:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125" src="assets/comprimidas/moras.jpeg" alt="">
       </div>
-      <div class="flex items-center w-1/2">
-        <ul class="flex flex-col md:gap-28 gap-3 w-full">
-          <li class="flex items-center md:gap-10 gap-3">
+      <!--Texto e iconos-->
+      <div class="flex items-center w-1/2 md:w-auto">
+        <ul class="flex flex-col lg:gap-28 md:gap-4 gap-2 w-full">
+          <li class="flex items-center md:gap-10 gap-2">
             <img src="assets/webp/icons/world.webp" alt="" class="md:w-12 w-6">
-            <p class="md:text-3xl text-xs font-bold">Dulces de distintas partes del mundo</p>
-            <!--bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500-->
+            <p class="lg:text-3xl md:text-xl text-xs font-bold">Dulces de distintas partes del mundo</p>
           </li>
-          <li class="flex items-center md:gap-10 gap-3">
+          <li class="flex items-center md:gap-10 gap-2">
             <img src="assets/webp/icons/delivery-4.webp" alt="" class="md:w-12 w-6">
-            <p class="md:text-3xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
+            <p class="lg:text-3xl md:text-xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
           </li>
-          <li class="flex items-center md:gap-10 gap-3">
+          <li class="flex items-center md:gap-10 gap-2">
             <img src="assets/webp/icons/oferta2.webp" alt="" class="md:w-12 w-6">
-            <p class="md:text-3xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
+            <p class="lg:text-3xl md:text-xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
           </li>
         </ul>
       </div>
     </div>
     <!--Sección alérgenos-->
     <div class="bg-red-100 bg-opacity-40 w-full md:h-60 h-12 flex flex-col justify-center items-center gap-3 md:gap-9 py-32 md:py-52">
-      <h1 class="text-sm text-center m-5 md:text-2xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
-      <h2 class="text-sm text center md:text-3xl font-bold text-rose-900">Lo primero eres tú.</h2>
-      <div class="flex flex-row md:w-12 w-6 items-center justify-center gap-10 md:gap-20 mt-4 md:mt-9">
+      <h1 class="text-sm text-center m-5 md:text-xl lg:text-2xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos en ti. Busca las etiquetas en todos nuestros productos.</h1>
+      <h2 class="text-sm text center md:text-2xl lg:text-3xl font-bold text-rose-900">Lo primero eres tú.</h2>
+      <div class="flex flex-row lg:w-12 md:w-10 w-6 items-center justify-center gap-10 md:gap-20 mt-4 md:mt-9">
         <!--Iconos alérgenos-->
         <img class="md:hover:scale-125" src="assets/webp/icons/avellana.webp" alt="">
         <img class="md:hover:scale-125" src="assets/webp/icons/azucar.webp" alt="">
@@ -135,46 +144,58 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
     <div class="flex flex-col justify-center items-center m-5 gap-6 md:m-10">
       <h1 class="self-start text-sm md:text-lg md:text-pink-800 font-bold">Productos recomendados</h1>
     <!--Productos-->
-      <div class="flex flex-row gap-7 md:gap-10 md:h-64 md:mt-5 mb-10">
-        <div class="flex flex-col md:flex-row md:gap-9 gap-3">
+      <div class="flex flex-row lg:flex-row lg:gap-10 gap-7 md:gap-3 md:h-96 lg:mt-5 mb-10 w-auto">
+        <div class="flex flex-col md:flex-col lg:flex-row lg:gap-9 md:gap-3 gap-3 md:w-48 md:h-48 lg:w-full lg:h-72">
           <!--Producto 1-->
-          <div class="flex flex-col md:hover:scale-110">
-          <div class="bg-[url('assets/comprimidas/fizz.jpeg')] w-24 md:w-80 h-20 md:h-80 md:bg-center bg-cover
-          bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><a href="#">Fizz Bang</a></div>
-        </div>
-        <div class="flex flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <img class="w-20 h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none" src="assets/chuches (10).jpg" alt="">
-          <div class="flex flex-col lg:p-4 gap-2">
-            <h1><a class="font-bold" href="">Lingoli</a></h1>
-            <h3 class="font-semibold">0,75€/ud
-            </h3>
-          </div>
-        </div>
-        <div class="flex flex-col md:flex-row md:gap-9 gap-3">
-          <div class="flex flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-            <img class="w-20 h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none" src="assets/chuches (10).jpg" alt="">
+          <div class="flex flex-row md:flex-col lg:flex-col gap-2 items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+            <img class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none" src="assets/chuches (10).jpg" alt="">
             <div class="flex flex-col lg:p-4 gap-2">
-              <h1><a class="font-bold" href="">Lingoli</a></h1>
-              <h3 class="font-semibold">0,75€/ud
+              <h1><a class="font-bold text-left p-3" href="">Fizz Bang</a></h1>
+              <h3 class="font-semibold">1,50€
               </h3>
             </div>
           </div>
-        <div class="flex flex-col md:hover:scale-110">
-          <div class="bg-[url('/assets/comprimidas/pez.jpeg')] w-24 md:w-80 h-20 md:h-80 bg-cover
-          bg-no-repeat object-top"></div>
-          <div class="bg-red-300 h-8 text-xs flex items-center justify-center md:h-24 md:font-bold md:text-xl md:text-pink-800"><a href="#">Blop Chocolate!</a></div>
+          <!--Producto 2-->
+        <div class="flex sm:flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+          <img class="w-20 h-20 md:w-full lg:w-full md:h-36 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none" src="assets/comprimidas/fizzmatcha.jpeg" alt="">
+          <div class="flex flex-col lg:p-4 gap-2">
+            <h1><a class="font-bold text-left p-3 sm:text-xs" href="">Fizz Bang Matcha</a></h1>
+            <h3 class="font-semibold">1,50€
+            </h3>
+          </div>
         </div>
         </div>
-    </div>
+        <!--Producto 3-->
+        <div class="flex flex-col md:flex-col lg:flex-row md:gap-4 lg:gap-9 gap-3 md:w-48 md:h-48 lg:w-full lg:h-72">
+          <div class="flex flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+            <img class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none" src="assets/comprimidas/candy4.jpg" alt="">
+            <div class="flex flex-col lg:p-4 gap-2">
+              <h1><a class="font-bold text-left p-3" href="">Zenhou</a></h1>
+              <h3 class="font-semibold">3,75€
+              </h3>
+            </div>
+          </div>
+          <!--Producto 4-->
+          <div class="flex flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+            <img class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none" src="assets/comprimidas/pez.jpeg" alt="">
+            <div class="flex flex-col lg:p-4 gap-2">
+              <h1><a class="font-bold text-left p-3" href="">Blop Chocolate!</a></h1>
+              <h3 class="font-semibold">1,00€/ud
+              </h3>
+            </div>
+          </div>
+        </div>
+        </div>
   </div>
+  <!--Script de Javascript para el menú de móvil - No funciona aún-->
   <script>
     function Menu(e){
       let list = document.querySelector('ul');
       e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
     }
   </script>
-<footer class="p-4 bg-blue-200 bg-opacity-40 sm:p-6">
+<!--Footer-->
+<footer class="bg-blue-200 bg-opacity-40 w-auto p-4">
   <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
           <a href="index.html" class="flex items-center">
