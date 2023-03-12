@@ -1,9 +1,10 @@
-const $products = document.querySelector("#container");
+const isCart = JSON.parse(localStorage.getItem("product"));
+if (isCart == null) {
+  const cart = [];
+  localStorage.setItem("product", JSON.stringify(cart));
+}
 
-localStorage.clear(); // esto es para que el carrito se borre
-const cart = []; // esto es el array de productos que iremos metiendo en el localStorage
-localStorage.setItem("product", JSON.stringify(cart)); // esto es para inicializar el carrito a 0
-// Estas 3 cosas probablemente se tengan que cambiar al index.html o ponerlo en todas, estoy investigando.
+const $products = document.querySelector("#container");
 
 async function getData() { // esta función es la que extrae los datos del json
   const res = await fetch("./assets/products.json");
