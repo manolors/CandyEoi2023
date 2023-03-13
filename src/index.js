@@ -6,7 +6,7 @@ if (isCart == null) {
 
 const $recomended = document.querySelector("#recomended");
 
-async function getData() {
+async function indexCards() {
   const res = await fetch("./assets/products.json");
   const json = await res.json();
   const chosenProducts = random(0, json.length, 4);
@@ -24,17 +24,17 @@ async function getData() {
     $recomended.appendChild($div);
   };
 }
-getData();
+indexCards();
 
 function random(min, max, num) {
   const res = [];
   for (let i = 0; i < num; i++) {
     // mientras la longitud de "res" (que tiene los valores a devolver) es igual al índice del for (quiere decir que no se ha añadido a res nada nuevo)
-    while (res.length == i) {
+    while (res.length === i) {
       let found = false;
       const number = Math.floor(Math.random() * max) + min;
       for (const value of res) {
-        if (value == number) {
+        if (value === number) {
           found = true;
         }
       }
