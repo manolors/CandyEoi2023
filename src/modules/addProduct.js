@@ -2,6 +2,7 @@
 
 export function addProduct(idproduct, image, name, price) {
   const actualCart = JSON.parse(localStorage.getItem("product"));// aquí traemos el carrito que haya y lo transformamos en objeto para poder leerlo.
+  console.log(actualCart);
   let found = false; // esto es para poder hacer la función de sumar cantidad o de introducir uno nuevo
 
   for (const i of actualCart) { // con el for of recorremos el carrito que nos hemos traído

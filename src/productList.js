@@ -5,10 +5,11 @@ import { getData } from "./modules/getData";
 const products = document.querySelector("#container"); // seleccionamos el div que va a contener los productos
 const template = document.querySelector("template"); // el template parece que solo puede ser targeteado por tagname, id no me deja
 
-localStorage.clear(); // esto es para que el carrito se borre
-const cart = []; // esto es el array de productos que iremos metiendo en el localStorage
-localStorage.setItem("product", JSON.stringify(cart)); // esto es para inicializar el carrito a 0
-// Estas 3 cosas probablemente se tengan que cambiar al index.html o ponerlo en todas, estoy investigando.
+const isCart = JSON.parse(localStorage.getItem("product"));
+if (isCart == null) {
+  const cart = [];
+  localStorage.setItem("product", JSON.stringify(cart));
+}
 
 async function createCards(data, template) { // esto también podría convertirse en módulo quizás para otras páginas (muy probablemente deberíamos)
   const json = await data;

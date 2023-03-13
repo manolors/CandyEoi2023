@@ -2,6 +2,8 @@
 // en productList.js funcione.
 
 import { addProduct } from "./addProduct";
+import { decreaseProduct } from "./decreaseProduct";
+import { removeProduct } from "./removeProduct";
 let buy;
 export function createListeners(action) {
   switch (action) {
@@ -19,11 +21,23 @@ export function createListeners(action) {
       break;
 
     case "decrease":
-      // aqui iría el añadir evento de restar un producto, NO hacer la función aquí, debe ser un módulo y ser importado
+      buy = document.querySelectorAll("#decButton");
+
+      for (let i = 0; i < buy.length; i++) { // con el for recorremos todos los botones y les añadimos el eventListener
+        buy[i].addEventListener("click", () => {
+          decreaseProduct(buy[i].dataset.value);
+        });
+      }
       break;
 
     case "delete":
-      // aquí iría el añadir evento de eliminar producto, NO hacer la función aquí, debe ser un módulo y ser importado
+      buy = document.querySelectorAll("#delete");
+
+      for (let i = 0; i < buy.length; i++) { // con el for recorremos todos los botones y les añadimos el eventListener
+        buy[i].addEventListener("click", () => {
+          removeProduct(buy[i].dataset.value);
+        });
+      }
       break;
   }
 }
