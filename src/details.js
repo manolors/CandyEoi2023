@@ -42,7 +42,7 @@ async function getData() {
                             <p class="mb-3 md:font-normal text-sm md:text-xl text-black "> Alérgenos: ${product.allergens}</p>
                             </div>
                             </p>
-                            <img id="addButton" data-value="${product.id}" data-image="${product.image}" data-name="${product.name}" data-price="${product.price}" class="w-10 h-12 cursor-pointer hover:invert" src="assets/icon/delivery-4.jpeg" alt="Comprar">                          </div>
+                            <img id="addButton" data-value="${product.id}" data-image="${product.image}" data-name="${product.name}" data-price="${product.price}" class="w-10 h-12 cursor-pointer hover:invert" src="assets/icon/carrito-de-compra-añadir.png" alt="Comprar">                          </div>
                           </div>
                           </div>`;
       $products.appendChild($div);
