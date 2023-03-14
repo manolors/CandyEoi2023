@@ -15,6 +15,7 @@
   <!--Imagen de header-->
   <header class="bg-[url('/assets/chuches/nubes.jpeg')] bg-center md:w-auto lg:w-auto w-full h-96 bg-cover
   bg-no-repeat object-top">
+
     <!--Menú-->
     <nav
       class="flex flex-row w-full min-h-[10vh] md:justify-center md:flex-row justify-between md:items-center w-[100%] mx-auto">
@@ -23,8 +24,9 @@
           <img class="w-6 mt-3" src="assets/icon/icon8-menú-redondeado-100.png" name="menu" onclick="Menu(this)" alt="Menú">
         </span>
         -->
+
       <div
-        class="md:static absolute md:min-h-fit left-0 md:top-[-100%] md:w-auto w-full flex justify-center items-center px-5 font-bold text-stone-50">
+        class="md:static absolute md:min-h-fit left-0 md:top-[-100%] md:w-auto w-full flex justify-center  items-center px-5 font-bold text-stone-50">
         <!--Categorías menú-->
         <ul
           class="flex md:flex-row flex-row justify-center mt-5 items-center md:items-center md:gap-10 gap-4 text-black">
@@ -52,6 +54,7 @@
               <a class="md:hover:text-pink-500" href="construccion.html">Dulces de Europa</a>
             </div>
           </li>
+
           <!--
             <li>
               <div class="flex flex-col items-center">
@@ -82,6 +85,8 @@
     <div class="flex flex-col items-center md:items-center md:relative translate-y-12 md:top-4">
       <img class="w-36 md:w-56" src="assets/logo-letras.png" alt="Logo">
     </div>
+    <div class="flex justify-end my-24 mx-4 md:absolute md:top-5 md:right-5 md:m-0  ">
+      <img id="carrito" class="w-10 md:w-12" src="assets/icon/carrito.png" alt="">
     </div>
   </header>
   <!--Barra de búsqueda-->
@@ -164,60 +169,81 @@ bg-no-repeat object-top flex flex-col items-center justify-center">
   <div class="flex flex-col justify-center items-center m-5 gap-6 md:m-10">
     <h1 class="self-start text-sm md:text-lg md:text-pink-800 font-bold">Productos recomendados</h1>
     <!--Productos-->
-    <div class="flex flex-row lg:flex-row lg:gap-10 gap-7 md:gap-3 md:h-96 lg:mt-5 mb-10 w-auto">
-      <div class="flex flex-col md:flex-col lg:flex-row lg:gap-9 md:gap-3 gap-3 md:w-48 md:h-48 lg:w-full lg:h-72">
-        <!--Producto 1-->
-        <div
-          class="flex flex-row md:flex-col lg:flex-col gap-2 items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="fizzbang.html"><img
-              class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
-              src="assets/productos/fizz.jpeg" alt="Fizz Bang"></a>
-          <div class="flex flex-col lg:p-4 gap-2">
-            <h1><a class="font-bold text-left p-3" href="fizzbang.html">Fizz Bang</a></h1>
-            <h3 class="font-semibold">3,50€/pack
+    <div
+      class="grid w-full md:grid-cols-2 lg:grid-cols-4 gap-5 md:w-5/6 md:gap-24 lg:w-auto lg:gap-10 py-5 md:py-12 lg:py-16">
+      <!--Producto 1-->
+      <div
+        class="flex flex-row md:flex-col lg:flex-col items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl w-full lg:w-auto lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+        <a href="fizzbang.html"><img
+            class="w-20 h-20 object-cover md:w-full lg:w-full md:h-64 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
+            src="assets/productos/fizz.jpeg" alt="Fizz Bang"></a>
+        <div class="flex justify-between w-full md:px-5 lg:p-4 p-3 items-center">
+          <div class="flex flex-col  gap-2">
+            <h1 class="text-left"><a class="font-bold text-left" href="fizzbang.html">Fizz Bang</a></h1>
+            <h3 class="font-semibold text-left">3,50€/pack
             </h3>
           </div>
-        </div>
-        <!--Producto 2-->
-        <div
-          class="flex sm:flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="fizzmatcha.html"><img
-              class="w-20 h-20 md:w-full lg:w-full md:h-36 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
-              src="assets/productos/fizzmatcha.jpeg" alt="Fizz Bang Matcha"></a>
-          <div class="flex flex-col lg:p-4 gap-2">
-            <h1><a class="font-bold text-left p-3" href="fizzmatcha.html">Fizz Bang Matcha</a></h1>
-            <h3 class="font-semibold">3,50€/pack
-            </h3>
-          </div>
+          <template id="cart-icon">
+            <img class="w-10" alt="carrito" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+          </template>
         </div>
       </div>
-      <!--Producto 3-->
-      <div class="flex flex-col md:flex-col lg:flex-row md:gap-4 lg:gap-9 gap-3 md:w-48 md:h-48 lg:w-full lg:h-72">
-        <div
-          class="flex flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="zenhoucolors.html"><img
-              class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
-              src="assets/productos/zenhou.jpeg" alt="Zenhou Colors"></a>
-          <div class="flex flex-col lg:p-4 gap-2">
-            <h1><a class="font-bold text-left p-3" href="zenhoucolors.html">Zenhou</a></h1>
-            <h3 class="font-semibold">2,50€/pack
+
+      <!--Producto 2-->
+      <div
+        class="flex flex-row md:flex-col lg:flex-col items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl w-full lg:w-auto lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+        <a href="fizzmatcha.html"><img
+            class="w-20 h-20 object-cover md:w-full lg:w-full md:h-64 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
+            src="assets/productos/fizzmatcha.jpeg" alt="Fizz Matcha"></a>
+        <div class="flex justify-between w-full md:px-5 lg:p-4 p-3 items-center">
+          <div class="flex flex-col  gap-2">
+            <h1 class="text-left"><a class="font-bold text-left" href="fizzmatcha.html">Fizz Matcha</a></h1>
+            <h3 class="font-semibold text-left">3,50€/pack
             </h3>
           </div>
+          <template id="cart-icon">
+            <img class="w-10" alt="carrito" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+          </template>
         </div>
-        <!--Producto 4-->
-        <div
-          class="flex flex-row md:flex-col lg:flex-col gap-2 border-1 items-center lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="blop.html"><img
-              class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
-              src="assets/productos/pez.jpeg" alt="Blop Chocolate"></a>
-          <div class="flex flex-col lg:p-4 gap-2">
-            <h1><a class="font-bold text-left p-3" href="blop.html">Blop Chocolate!</a></h1>
-            <h3 class="font-semibold">1,75€/ud
+      </div>
+
+      <!--Producto 3-->
+      <div
+        class="flex flex-row md:flex-col lg:flex-col items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl w-full lg:w-auto lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+        <a href="zenhoucolors.html"><img
+            class="w-20 h-20 object-cover md:w-full lg:w-full md:h-64 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
+            src="assets/productos/zenhou.jpeg" alt="Zenhou"></a>
+        <div class="flex justify-between w-full md:px-5 lg:p-4 p-3 items-center">
+          <div class="flex flex-col  gap-2">
+            <h1 class="text-left"><a class="font-bold text-left" href="zenhoucolors.html">Zenhou</a></h1>
+            <h3 class="font-semibold text-left">2,50€/pack
             </h3>
           </div>
+          <template id="cart-icon">
+            <img class="w-10" alt="carrito" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+          </template>
+        </div>
+      </div>
+
+      <!--Producto 4-->
+      <div
+        class="flex flex-row md:flex-col lg:flex-col items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl w-full lg:w-auto lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+        <a href="blop.html"><img
+            class="w-20 h-20 object-cover md:w-full lg:w-full md:h-64 lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none"
+            src="assets/productos/pez.jpeg" alt="Blop Chocolate"></a>
+        <div class="flex justify-between w-full md:px-5 lg:p-4 p-3 items-center">
+          <div class="flex flex-col  gap-2">
+            <h1 class="text-left"><a class="font-bold text-left" href="zenhoucolors.html">Blop Chocolate!</a></h1>
+            <h3 class="font-semibold text-left">1,75€/pack
+            </h3>
+          </div>
+          <template id="cart-icon">
+            <img class="w-10" alt="carrito" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+          </template>
         </div>
       </div>
     </div>
+
   </div>
   <!--Script de Javascript para el menú de móvil - No funciona aún-->
   <!--

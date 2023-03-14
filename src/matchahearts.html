@@ -98,9 +98,14 @@
         <h6>MatchaHearts</h6>
         <p>4.00€ / paquete.</p>
         <div class="inline-flex mr-1 md:gap-3">
-          <img class="w-8 md:w-10" src="assets/icon/leche.jpeg" alt="Lactosa"></img>
-          <img class="w-12 md:w-14" src="assets/icon/azucar.webp" alt="Azúcar"></img>
+          <img class="w-6 md:w-8" src="assets/icon/leche.jpeg" alt="Lactosa"></img>
+          <img class="w-10 md:w-10" src="assets/icon/azucar.webp" alt="Azúcar"></img>
         </div>
+        <template id="cart-icon">
+          <div class=" p-3   ">
+            <img class=" lg:w-10 lg:h-10 w-6 " src="assets/icon/carrito-de-compra-anadir.png" alt="carrito-de-compra-anadir">
+          </div>
+        </template>
       </div>
     </div>
     <!--Info-producto: descrip.,ingredientes, alérgemos-->
@@ -108,15 +113,17 @@
       <div
         class="bg-blue-50 w-auto md:p-4 flex flex-col items-center border-blue-800 flex-row max-w-xl hover:bg-pink-50 gap-5">
         <div class="flex flex-col justify-between p-4 leading-normal text-justify">
-          <p class="mb-3 font-normal text-sm md:text-2xl text-black">Atrévete a probar esta deliciosa caja de bombones (10 unidades) con una fina capa de chocolate con leche y un relleno líquido de té matcha.</p>
+          <p class="mb-3 font-normal text-sm md:text-2xl text-black">Atrévete a probar esta deliciosa caja de bombones
+            (10 unidades) con una fina capa de chocolate con leche y un relleno líquido de té matcha.</p>
           <br>
-          <p class="md:mb-3 font-normal text-sm md:text-xl text-black">Ingredientes: Azúcar, Manteca de cacao, Leche en polvo, Extracto de té verde, Emulsionante (soja), Aroma, Colorante (E-134, E-435 y E-243).</p>
+          <p class="md:mb-3 font-normal text-sm md:text-xl text-black">Ingredientes: Azúcar, Manteca de cacao, Leche en
+            polvo, Extracto de té verde, Emulsionante (soja), Aroma, Colorante (E-134, E-435 y E-243).</p>
         </div>
         <p class="mb-3 md:font-normal text-sm md:text-xl text-black "> Alérgenos: <br>
-          <div class="flex gap-3 md:gap-3 items-center justify-center md:m-3">
-            <img class="w-7 md:w-7" src="assets/icon/leche.jpeg" alt="Lactosa">Lactosa</img>
-          </div>
-          </p>
+        <div class="flex gap-3 md:gap-3 items-center justify-center md:m-3">
+          <img class="w-7 md:w-7" src="assets/icon/leche.jpeg" alt="Lactosa">Lactosa</img>
+        </div>
+        </p>
       </div>
     </div>
   </div>
@@ -143,11 +150,15 @@
           <a href="bluedreams.html"><img
               class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
               src="assets/productos/bluedreams.jpeg" alt="BlueDreams">
-            <div class="flex flex-col lg:p-4 gap-2 text-sm md:text-xl">
-              <h1 class="font-bold">Blue Dreams</h1>
-              <h3 class="font-semibold">1.50€/pack
-              </h3>
-            </div>
+              <div class="flex items-center justify-between lg:p-4">
+                <div class="flex flex-col gap-2 text-sm md:text-xl">
+                  <h1 class="font-bold">Blue Dreams</h1>
+                  <h3 class="font-semibold">1.50€/pack </h3>
+                </div>
+                <template id="cart-icon">
+                <img class=" lg:w-10 lg:h-10 w-6" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+              </template>
+              </div>
           </a>
         </div>
         <!--Producto 2-->
@@ -155,11 +166,15 @@
           class="flex flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
           <a href="blop.html"><img class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
               src="assets/productos/pez.jpeg" alt="blopChocolate">
-            <div class="flex flex-col lg:p-4 gap-2 text-sm md:text-xl">
-              <h1 class="font-bold">Blop Chocolate!</h1>
-              <h3 class="font-semibold">1.75€/ud
-              </h3>
-            </div>
+              <div class="flex items-center justify-between lg:p-4">
+                <div class="flex flex-col gap-2 text-sm md:text-xl">
+                  <h1 class="font-bold">Blop Chocolate!</h1>
+                  <h3 class="font-semibold">1.75€/ud </h3>
+                </div>
+                <template id="cart-icon">
+                <img class=" lg:w-10 lg:h-10 w-6" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+              </template>
+              </div>
           </a>
         </div>
       </div>
@@ -167,92 +182,103 @@
         <!--Producto 3-->
         <div
           class="flex flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="zenhoucolors.html"><img class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
+          <a href="zenhoucolors.html"><img
+              class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
               src="assets/productos/zenhou.jpeg" alt="Zenhou">
-            <div class="flex flex-col lg:p-4 gap-2 text-sm md:text-xl">
-              <h1 class="font-bold">Zenhou</h1>
-              <h3 class="font-semibold">2.50€/pack
-              </h3>
-            </div>
+              <div class="flex items-center justify-between lg:p-4">
+                <div class="flex flex-col gap-2 text-sm md:text-xl">
+                  <h1 class="font-bold">Zenhou</h1>
+                  <h3 class="font-semibold">2.50€/pack </h3>
+                </div>
+                <template id="cart-icon">
+                <img class=" lg:w-10 lg:h-10 w-6" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+              </template>
+              </div>
           </a>
         </div>
-      <!--Producto 4-->
-      <div
+        <!--Producto 4-->
+        <div
           class="flex flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
-          <a href="kitkat.html"><img class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
-            src="assets/productos/kitkat.jpeg" alt="KitKat">
-          <div class="flex flex-col lg:p-4 gap-2 text-sm md:text-xl">
-            <h1 class="font-bold">KitKat</h1>
-            <h3 class="font-semibold">5.50€/pack
-            </h3>
+          <a href="kitkat.html"><img
+              class="w-full h-20 lg:w-full lg:h-48 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none"
+              src="assets/productos/kitkat.jpeg" alt="KitKat">
+              <div class="flex items-center justify-between lg:p-4">
+                <div class="flex flex-col gap-2 text-sm md:text-xl">
+                  <h1 class="font-bold">KitKat</h1>
+                  <h3 class="font-semibold">5.50€/pack </h3>
+                </div>
+                <template id="cart-icon">
+                <img class=" lg:w-10 lg:h-10 w-6" src="assets/icon/carrito-de-compra-anadir.png" alt="">
+              </template>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--footer con redes-->
+    <footer class="w-full p-4 bg-blue-200 bg-opacity-40 ">
+      <div class="md:flex md:justify-between text-sm items-center">
+        <div class="mb-3 md:mb-0">
+          <a href="index.html" class="flex items-center justify-center">
+            <img src="assets/logo-letras.png" class="h-32 md:mr-3" alt="Logo CandyKoa" />
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:gap-5 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
+            <ul class="">
+              <li class="mb-2 md:mb-4">
+                <a href="info.html" class="hover:underline">Quiénes somos</a>
+              </li>
+              <li>
+                <a href="listaproductos.html" class="hover:underline">Nuestros productos</a>
+              </li>
+            </ul>
           </div>
-        </a>
-        </div>
-    </div>
-  </div>
-  <!--footer con redes-->
-  <footer class="w-full p-4 bg-blue-200 bg-opacity-40 ">
-    <div class="md:flex md:justify-between text-sm items-center">
-      <div class="mb-3 md:mb-0">
-        <a href="index.html" class="flex items-center justify-center">
-          <img src="assets/logo-letras.png" class="h-32 md:mr-3" alt="Logo CandyKoa" />
-        </a>
-      </div>
-      <div class="grid grid-cols-2 gap-4 sm:gap-5 sm:grid-cols-3">
-        <div>
-          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
-          <ul class="">
-            <li class="mb-2 md:mb-4">
-              <a href="info.html" class="hover:underline">Quiénes somos</a>
-            </li>
-            <li>
-              <a href="listaproductos.html" class="hover:underline">Nuestros productos</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
-          <ul class="">
-            <li class="mb-2 md:mb-4">
-              <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
-          <ul class="">
-            <li class="mb-2 md:mb-4">
-              <a href="construccion.html" class="hover:underline">Política de privacidad</a>
-            </li>
-            <li>
-              <a href="construccion.html" class="hover:underline">Términos y Condiciones</a>
-            </li>
-          </ul>
+          <div>
+            <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
+            <ul class="">
+              <li class="mb-2 md:mb-4">
+                <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
+            <ul class="">
+              <li class="mb-2 md:mb-4">
+                <a href="construccion.html" class="hover:underline">Política de privacidad</a>
+              </li>
+              <li>
+                <a href="construccion.html" class="hover:underline">Términos y Condiciones</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All
-        Rights Reserved.
-      </span>
-      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-        <a href="mailto:candykoaofficial@gmail.com" class="text-white">
-          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/gmail1.jpeg" alt="Gmail">
-        </a>
-        <a href="https://www.instagram.com/candykoaofficial/" class="text-white">
-          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/instagram2.jpeg"
-            alt="Instagram">
-        </a>
-        <a href="https://twitter.com/CandyKoa_" class="text-white">
-          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/twitter2.webp" alt="Instagram">
-        </a>
+      <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All
+          Rights Reserved.
+        </span>
+        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a href="mailto:candykoaofficial@gmail.com" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/gmail1.jpeg" alt="Gmail">
+          </a>
+          <a href="https://www.instagram.com/candykoaofficial/" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/instagram2.jpeg"
+              alt="Instagram">
+          </a>
+          <a href="https://twitter.com/CandyKoa_" class="text-white">
+            <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/twitter2.webp"
+              alt="Instagram">
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
