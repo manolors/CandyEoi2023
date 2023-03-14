@@ -1,19 +1,18 @@
 export function decreaseProduct(idproduct) {
-  console.log("restando");
   const actualCart = JSON.parse(localStorage.getItem("product"));
+  const decButton = document.querySelectorAll("#decButton");
   // const btn = document.querySelectorAll("#decButton");
   for (const i of actualCart) {
     if (i.id === idproduct && i.cantidad !== 1) {
       i.cantidad--;
+      const productIndex = actualCart.indexOf(i);
+      const amountHtml = document.querySelector(`#amount-${+productIndex}`);
+      amountHtml.textContent--;
+
+      if (i.cantidad === 1) {
+        decButton[productIndex].classList.toggle("invisible");
+      }
     }
-
-    // if (i.cantidad === 1) {
-    //   btn.classList.add("hidden");
-    // }
-
-    // if (i.cantidad > 1) {
-    //   btn.classList.remove("visible");
-    // }
   }
 
   localStorage.setItem("product", JSON.stringify(actualCart));

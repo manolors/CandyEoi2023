@@ -35,9 +35,9 @@ async function createCards(data, template) { // esto también podría convertirs
     addButton.dataset.price = product.price;
 
     products.appendChild(html); // se añade la tarjeta al div de tarjetas
+    ;// llamada a la función encargada de añadir el evento a todos los botones #addbutton
   });
-
-  createListeners("add"); // llamada a la función encargada de añadir el evento a todos los botones #addbutton
+  createListeners("add");
 }
 
 const DATA = getData(); // se llama a getData en una constante para pasarla como parámetro a createCards

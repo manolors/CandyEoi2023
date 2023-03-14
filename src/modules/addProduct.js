@@ -2,8 +2,8 @@
 
 export function addProduct(idproduct, image, name, price) {
   const actualCart = JSON.parse(localStorage.getItem("product"));// aquí traemos el carrito que haya y lo transformamos en objeto para poder leerlo.
-  console.log(actualCart);
   let found = false; // esto es para poder hacer la función de sumar cantidad o de introducir uno nuevo
+  const decButton = document.querySelectorAll("#decButton");
 
   for (const i of actualCart) { // con el for of recorremos el carrito que nos hemos traído
     // aquí comparamos el id de los productos que hayan en el carrito y lo comparamos con el id del que queremos meter
@@ -12,6 +12,13 @@ export function addProduct(idproduct, image, name, price) {
     if (i.id === idproduct) {
       i.cantidad++; // si es el mismo, se incrementa la cantidad
       found = true; // marco como encontrado el producto
+      const productIndex = actualCart.indexOf(i);
+      const amountHtml = document.querySelector(`#amount-${+productIndex}`);
+      amountHtml.textContent++;
+
+      if (i.cantidad > 1) {
+        decButton[productIndex].classList.remove("invisible");
+      }
     }
   }
 

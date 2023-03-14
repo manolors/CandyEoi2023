@@ -4,6 +4,7 @@
 import { addProduct } from "./addProduct";
 import { decreaseProduct } from "./decreaseProduct";
 import { removeProduct } from "./removeProduct";
+import { clearCart } from "./clearCart";
 let buy;
 export function createListeners(action) {
   switch (action) {
@@ -38,6 +39,15 @@ export function createListeners(action) {
           removeProduct(buy[i].dataset.value);
         });
       }
+      break;
+
+    case "clear":
+      buy = document.querySelector("#clearCart");
+
+      buy.addEventListener("click", () => {
+        clearCart();
+      });
+
       break;
   }
 }
