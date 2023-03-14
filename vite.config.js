@@ -1,15 +1,20 @@
-import path from "path";
-const isGitHubPages = false;
-const folderName = path.basename(process.cwd()) + "/";
-const mode = process.env.NODE_ENV === "production" ? "production" : "development";
-const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
+import { resolve } from "path";
 
+const mode = process.env.NODE_ENV;
+const base = "/";
 export default {
   root: "src",
   base,
   mode,
   publicDir: "../public",
   build: {
+    rollupOptions: {
+      input: {
+        main: resolve("src/index.html"),
+        construcction: resolve("src/construccion.html"),
+
+      },
+    },
     outDir: "../dist",
     assetsDir: "./"
   }
