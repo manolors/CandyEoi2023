@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CandyKoa</title>
+  <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+
+
+  <script type="module" crossorigin src="/Candy/src/index-02e906be.js"></script>
+  <link rel="stylesheet" href="/Candy/src/index-e99a1d1e.css">
+</head>
+
+<body class="bg-white w-full md:w-full lg:w-full">
+  <!--Imagen de header-->
+  <header class="bg-[url('/assets/chuches/nubes.jpeg')] bg-center md:w-auto lg:w-auto w-full h-96 bg-cover
+  bg-no-repeat object-top">
+
+    <!--Menú-->
+    <nav
+      class="flex flex-row min-h-[10vh] md:justify-center md:flex-row justify-between md:items-center w-[100%] mx-auto">
+      <!--
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <img class="w-6 mt-3" src="assets/icon/icon8-menú-redondeado-100.png" name="menu" onclick="Menu(this)" alt="Menú">
+        </span>
+        -->
+
+      <div
+        class="md:static absolute md:min-h-fit left-0 md:top-[-100%] md:w-auto w-full flex justify-center  items-center px-5 font-bold text-stone-50">
+        <!--Categorías menú-->
+        <ul
+          class="flex md:flex-row flex-row justify-center mt-5 items-center md:items-center md:gap-10 gap-4 text-black">
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="/Candy/japanflag-a62d0767.jpeg" alt="Bandera de Japón">
+              <a class="md:hover:text-pink-500" href="productList.html">Dulces de Japón</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="/Candy/eeuu-a8d364c0.jpeg" alt="Bandera de EEUU">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de EEUU</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="/Candy/mexico-2add6f8b.jpeg" alt="Bandera de México">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de México</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="/Candy/europe-a69d829a.jpeg" alt="Bandera de Europa">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de Europa</a>
+            </div>
+          </li>
+
+          <!--
+            <li>
+              <div class="flex flex-col items-center">
+                <img class="w-9" src="assets/icon/sweets.jpeg" alt="Golosinas">
+                <a class="md:hover:text-pink-500" href="construccion.html">Golosinas</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex flex-col items-center">
+                <img class="w-9" src="assets/icon/chocolate.jpeg" alt="Chocolate">
+                <a class="md:hover:text-pink-500" href="construccion.html">Chocolate</a>
+              </div>
+            </li>
+            -->
+        </ul>
+      </div>
+      <!--Iconos Login y Carrito-->
+      <!--<div class="md:flex md:gap-6 text-purple-800 md:translate-x-96">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>
+          </div>-->
+    </nav>
+    <!--Logo CandyKoa del header-->
+    <div class="flex flex-col items-center md:items-center md:relative translate-y-12 md:top-4">
+      <img class="w-36 md:w-56" src="data:image/png;base64,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" alt="Logo">
+    </div>
+    <div class="flex justify-end my-24 mx-4 md:absolute md:top-5 md:right-5 md:m-0  ">
+      <a href="cart.html"><img id="carrito" class="w-10 md:w-12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAHlBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaVcReAAAACXRSTlMAqlUay3XoO5OrKKKyAAADM0lEQVRo3u1aO3PTQBB2kF/pDJMU7jwUQDoNQyDqBBkS1HmARl0GzAzqTKjUmUfj0rGt5P4tjmRJ0d2e7r69lu08Pn3W7ePblzudH0n29lOHLz1xL+/4AGkOIC7ZAOMCQEy5AMke4I4LIITjK0QlwA0TYFkCZD4P4HV1hwUPYFBqUayZd3j566gA2PKd6SwH2Dj4c5wj+HyAbg4w5wM8cvPmnSlc7HgvnkBl9psOKUC++2REALKlWAGScyqkENn4sic5vMIJC2ClUCsqkwog4AF8rQAOeQC1Jfv558fWcpRIDFCEIxJ+STOAD2BCSJsBPIQJocipo+bHCRzAYZMQpnBGCpt4C1eAEZxUwyajhLAORs0XunLg4TGa3GS7LVEA2fVyRrkFAPLoySRGQdJrIKXTFAVIpcIqkCjKLh8/+MVDNMEvJaX1UYBIMhvMKJInw4yiBA/KKEpFgTKKch6tUZQro4yiKB1llEAxO8goqdIigIwS0zXKmu3JMKNEynGQURLlxhijEEbDGKWn+h3GKAeq52OMEqjBizHKUj0NMYpH9KoQo3SJLg1ilFiokYMwSk8QhxFGiakuD2CUV2Szbc8op/v2JqTCw8wo3ouyzvWpAF1Z1rjUuADtehbaQQLcbPC6HlXdWNdzpx0owc0Or+s5JwyMdD3ftHWb5fO+PsYtJHtC++jQ7unZ8by15kAKdpLnbvkARTS5z4ImfIDAaSBW2ZE71KtaP9JLodlkNndUglixL9EryWbudofdLY4/Pm2RucV4tD0eJgY7YDMsFq355gltu0xNeRNOKnVML5lJob5E5HaFHTFFLkrMEcYOZtxXABHXkSp5c81z5f9SGuH6p1a3zy3I6mwXT+/Jc97nnQX/mJ4vUuwX6qtnNrWsF2mdfahOo1uKhG1HW8WF5laGbBwGwmanVu8ZQn0B4xtVSNYJqdVCq68vJGuqujInN6rQqEN8bRwWS3M6eYnSVgU9qJfJwZNxr+j8Bs466Op5M9a7CFEhED8T2C1nE623DO1WqyfaU15itdzt6TWd2q2XY22ltk/9pjFLkVxJ4soXqxtjVhn8TWaafxOcXmQflOf/AdZJqgzwCfBbAAAAAElFTkSuQmCC" alt=""></a>
+    </div>
+  </header>
+  <!--Barra de búsqueda-->
+  <!--
+  <form class="flex flex-row justify-center p-3">
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search" class="block items-center w-80 p-3 pl-10 text-sm text-gray-900 border border-b-pink-700 border-t-transparent border-l-transparent border-r-transparent" placeholder="¡Encuentra tus dulces favoritos!" required>
+    </div>
+</form>
+-->
+  <!--Fondo fresas-->
+  <div class="bg-[url('/assets/chuches/fresa.jpeg')] bg-center lg:mt-5 md:w-auto sm:w-full md:h-72 h-36 bg-cover
+bg-no-repeat object-top flex flex-col items-center justify-center">
+    <div class="flex flex-col gap-5 md:gap-20">
+      <p class="text-center font-bold lg:text-4xl md:text-2xl text-white p-1 rounded-xl bg-pink-600 bg-opacity-50">
+        ¡La desconexión que necesitas a sólo un click!
+      </p>
+      <div class="flex flex-row justify-center items-center gap-2 md:justify-center md:items-center">
+        <a href="productList.html"
+          class="flex md:items-center bg-pink-600 rounded-lg p-1 font-bold text-white md:hover:bg-pink-900 md:h-7 md:p-5 text-sm md:text-2xl">¡Quiero
+          verlo!</a>
+        <img src="/Candy/mouse-click-icon-db763273.svg" class="w-6 md:hover:animate-ping" alt="Flecha">
+      </div>
+    </div>
+  </div>
+  <!--Entrada 1 con fotos e iconos-->
+  <div
+    class="flex md:flex-row lg:flex-row md:mt-10 md:mb-10 md:p-10 lg:m-24 m-4 md:gap-5 lg:gap-28 gap-2 mx-2 w-auto md:w-auto">
+    <!--Imágenes-->
+    <div class="grid grid-cols-2 lg:gap-6 gap-2 md:gap-2 w-44 md:w-72 lg:w-1/2">
+      <img
+        class="col-span-2 object-cover h-20 md:h-48 w-full lg:w-full md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125"
+        src="/Candy/chewchew2-b5201b90.png" alt="Hi-Chew">
+      <img
+        class="md:h-32 lg:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125"
+        src="/Candy/halloween-22c67b2f.jpeg" alt="Chocolate">
+      <img
+        class="md:h-32 lg:h-60 object-cover md:hover:scale-110 md:hover:ease-linear duration-100 md:hover:contrast-125"
+        src="/Candy/chuches-5-d3ee719d.jpeg" alt="Moras">
+    </div>
+    <!--Texto e iconos-->
+    <div class="flex items-center w-1/2 md:w-auto">
+      <ul class="flex flex-col lg:gap-28 md:gap-4 gap-2 w-full">
+        <li class="flex items-center md:gap-10 gap-2">
+          <img src="/Candy/world-9357d233.webp" alt="Mundo" class="md:w-12 w-6">
+          <p class="lg:text-3xl md:text-xl text-xs font-bold">Dulces de distintas partes del mundo</p>
+        </li>
+        <li class="flex items-center md:gap-10 gap-2">
+          <img src="data:image/jpeg;base64,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" alt="Entrega" class="md:w-12 w-6">
+          <p class="lg:text-3xl md:text-xl text-xs font-bold">Envíos a toda España (Canarias incluidas)</p>
+        </li>
+        <li class="flex items-center md:gap-10 gap-2">
+          <img src="/Candy/oferta2-00561211.jpeg" alt="Oferta" class="md:w-12 w-6">
+          <p class="lg:text-3xl md:text-xl text-xs font-bold">¡Regístrate y recibe ofertas y descuentos especiales!</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Sección alérgenos-->
+  <div
+    class="bg-red-100 bg-opacity-40 w-full md:h-60 h-12 flex flex-col justify-center items-center gap-3 md:gap-9 py-32 md:py-52">
+    <h1 class="text-sm text-center m-5 md:text-xl lg:text-2xl"> ¿Tienes algún tipo de alergia o intolerancia? Pensamos
+      en ti. Busca las etiquetas en todos nuestros productos.</h1>
+    <h2 class="text-sm text center md:text-2xl lg:text-3xl font-bold text-rose-900">Lo primero eres tú.</h2>
+    <div class="flex flex-row lg:w-12 md:w-10 w-6 items-center justify-center gap-10 md:gap-20 mt-4 md:mt-9">
+      <!--Iconos alérgenos-->
+      <img class="md:hover:scale-125" src="/Candy/avellana-5a2cbf8b.jpeg" alt="Avellana">
+      <img class="md:hover:scale-125" src="data:image/webp;base64,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" alt="Azúcar">
+      <img class="md:hover:scale-125" src="/Candy/cacahuete-9b51f571.webp" alt="Cacahuete">
+      <img class="md:hover:scale-125" src="/Candy/huevos-73dfe9f2.jpeg" alt="Huevos">
+      <img class="md:hover:scale-125" src="/Candy/leche-52658ce2.jpeg" alt="Leche">
+    </div>
+  </div>
+  <!--Sección productos recomendados-->
+  <!--Título-->
+  <div class="flex flex-col justify-center items-center m-5 gap-6 md:m-10">
+    <h1 class="self-start text-sm md:text-lg md:text-pink-800 font-bold">Productos recomendados</h1>
+    <!--Productos-->
+    <div id="recomended" class="flex flex-col sm:flex-col lg:flex-row lg:gap-10 gap-7 md:gap-3 md:h-96 lg:mt-5 mb-10 w-auto">
+        <!--Productos-->
+      </div>
+    </div>
+  </div>
+  <!--Script de Javascript para el menú de móvil - No funciona aún-->
+  <!--
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+  -->
+  <!--Footer-->
+  <footer class="bg-blue-200 bg-opacity-40 w-auto p-4">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="index.html" class="flex items-center">
+          <img src="data:image/png;base64,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" class="h-32 mr-3" alt="Logo CandyKoa" />
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="info.html" class="hover:underline">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="productList.html" class="hover:underline">Nuestros productos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="construccion.html" class="hover:underline">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="construccion.html" class="hover:underline">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights
+        Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a href="mailto:candykoaofficial@gmail.com" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="/Candy/gmail1-9fc562bb.jpeg" alt="Gmail">
+        </a>
+        <a href="https://www.instagram.com/candykoaofficial/" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="/Candy/instagram2-62ca7fa4.jpeg"
+            alt="Instagram">
+        </a>
+        <a href="https://twitter.com/CandyKoa_" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="/Candy/twitter2-491708ae.webp" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
