@@ -16,7 +16,7 @@ async function getData() {
   console.log(json);
 
   json.forEach((product) => {
-    if (product.id == idProduct) {
+    if (product.id === idProduct) {
       const $div = document.createElement("div");
       $div.innerHTML = `<div class="w-full flex flex-col md:flex-row items-center border-blue-800 flex-row max-w-xl gap-5">
                           <div class="w-auto md:w-full bg-transparent items-center">
@@ -63,7 +63,7 @@ function addProduct(idproduct, image, name, price) {
   const actualCart = JSON.parse(localStorage.getItem("product"));// aquí traemos el carrito que haya y lo transformamos en objeto para poder leerlo.
   let found = false; // esto es para poder hacer la función de sumar cantidad o de introducir uno nuevo
   for (const value of actualCart) { // con el for of recorremos el carrito que nos hemos traído
-    if (value.id == idproduct) { // aquí comparamos el id de los productos que hayan en el carrito y lo comparamos con el id del que queremos meter (pongo id porque ya arriba está el parámetro definido y te devuelve directamente el id del producto)
+    if (value.id === idproduct) { // aquí comparamos el id de los productos que hayan en el carrito y lo comparamos con el id del que queremos meter (pongo id porque ya arriba está el parámetro definido y te devuelve directamente el id del producto)
       value.cantidad++; // si es el mismo, se incrementa la cantidad
       found = true; // marco como encontrado el producto
     }
@@ -90,7 +90,7 @@ async function getDataRecommended() {
                         <div class="flex flex-row md:flex-col lg:flex-col gap-2 items-center border-1 lg:text-center border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
                         <img class="w-20 h-20 md:w-full lg:w-full md:h-full lg:h-48 rounded-l-lg md:rounded-t-lg md:rounded-bl-none lg:rounded-t-lg lg:rounded-bl-none" src="${json[chosenProducts[i]].image}" alt="${json[chosenProducts[i]].name}"></a>
                         <div class="flex flex-col lg:p-4 gap-2">
-                        <h1><a class="font-bold text-left p-3" href="detalle.html?id=${json[chosenProducts[i]].id}">${json[chosenProducts[i]].name}</a></h1>
+                        <h1><a class="font-bold text-left p-3" href="details.html?id=${json[chosenProducts[i]].id}">${json[chosenProducts[i]].name}</a></h1>
                         <h3 class="font-semibold">${json[chosenProducts[i]].price}€</h3>
                         </div>
                         </div>
@@ -104,11 +104,11 @@ function random(min, max, num) {
   const res = [];
   for (let i = 0; i < num; i++) {
     // mientras la longitud de "res" (que tiene los valores a devolver) es igual al índice del for (quiere decir que no se ha añadido a res nada nuevo)
-    while (res.length == i) {
+    while (res.length === i) {
       let found = false;
       const number = Math.floor(Math.random() * max) + min;
       for (const value of res) {
-        if (value == number) {
+        if (value === number) {
           found = true;
         }
       }
