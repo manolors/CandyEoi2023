@@ -1,3 +1,6 @@
+import { totalItems } from "./totalItems";
+import { updatePrice } from "./updatePrice";
+
 export function removeProduct(idproduct) {
   const actualCart = JSON.parse(localStorage.product);
   actualCart.forEach(product => {
@@ -11,6 +14,7 @@ export function removeProduct(idproduct) {
       actualCart.splice(productIndex, 1);
     }
   });
-
   localStorage.setItem("product", JSON.stringify(actualCart));
+  totalItems();
+  updatePrice();
 }

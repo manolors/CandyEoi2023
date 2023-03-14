@@ -1,11 +1,11 @@
 import { createListeners } from "./modules/createListeners";
+import { totalItems } from "./modules/totalItems";
+import { updatePrice } from "./modules/updatePrice";
 
 const $show = document.querySelector("#productsCart");
-const $pay = document.querySelector("#totalize");
 
 function showCart() {
   const added = JSON.parse(localStorage.getItem("product"));
-  let totalize = 0;
   for (let i = 0; i < added.length; i++) {
     const $div = document.createElement("div");
     $div.setAttribute("id", "cartContainer");
@@ -20,7 +20,7 @@ function showCart() {
                     </div>
                     <div class="flex flex-col gap-3 items-center">
                     <h2 class="font-bold">Precio</h2>
-                    <p>${added[i].precio}€</p>
+                    <p>${added[i].precio}</p>
                     </div>
                     <div class="flex flex-col gap-3 items-center">
                     <h1class="font-bold">Cantidad</h1class=>
@@ -32,29 +32,24 @@ function showCart() {
                     </div>
                     <div class="flex flex-col gap-3 items-center">
                     <h2 class="font-bold">Subtotal</h2>
-                    <h2>${added[i].precio * added[i].cantidad}€</h2>
+                    <h2 id="itemPrice"></h2>
                     </div>
                     <div class="flex flex-col gap-3 items-center">
                     <img class="w-6" src="assets/icon/gmail1.jpeg" alt="" id="delete" data-value="${added[i].id}">
                     </div>
                     </div>`;
-    totalize = totalize + (added[i].precio * added[i].cantidad);
     $show.appendChild($div);
 
     const decButton = document.querySelectorAll("#decButton");
-    console.log(decButton);
 
     if (added[i].cantidad === 1) { decButton[i].classList.toggle("invisible"); }
   }
-
-  const $div = document.createElement("div");
-  $div.innerHTML = `<h1>Total: ${totalize}€</h1>
-                    <p>Productos: ${added.length}</p>`;
-  $pay.appendChild($div);
 }
 
 showCart();
+updatePrice();
+totalItems();
+createListeners("clear");
 createListeners("add");
 createListeners("decrease");
 createListeners("delete");
-// createListeners("clear");
